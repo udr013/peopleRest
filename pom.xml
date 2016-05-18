@@ -4,13 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nl.carpago</groupId>
-	<artifactId>fodp-parser</artifactId>
+	<artifactId>people</artifactId>
 	<version>1.2.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>fodp-parser</name>
-	<description>Parser for converting fodp files (Open Office) to Asciidoctor</description>
-	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -18,22 +15,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<developers>
-		<developer>
-			<id>rloman</id>
-			<name>Raymond Loman</name>
-			<email>raymond@carpago.nl</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<organization>Carpago Software</organization>
-			<timezone>+1</timezone>
-		</developer>
-	</developers>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
         <asciidoctor.maven.plugin.version>1.5.2.1</asciidoctor.maven.plugin.version>
 	</properties>
 	
