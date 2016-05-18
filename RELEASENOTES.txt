@@ -1,0 +1,74 @@
+v1.1.0
+      Add bootstrap files
+      Add javaxcript
+      Remove bootstrap and set to CDN
+	  Add a banner
+
+
+
+=============================================
+v1.0.0
+Carpago Software | Raymond Loman (17):
+      Add one more presentation
+      Nice. The main has now a / method
+      Add auto executable in maven plugin. Add README.adoc for continuing writing in it for the course
+      Implement file up- and download from .fodp to .adoc
+      Add some more info to adoc
+      Add some more. now I am at and starting with Security. Chapter 28
+      Move and add some asciidoc
+      Add the maven asciidoc plugin and fix some errors which are shown now
+      Start the parsing from the document after office:body and stop parsing after end office:body
+      Use the uploaded fileName as output file name AND make override in field name
+      Make the selection of renderPresentationNotes and renderPageNums selectable through the index.html view
+      Just always print the pagenumber since it is always handy
+
+===========================================================
+v0.1.0
+
+Carpago Software | Raymond Loman (44):
+      init
+      Firs setup from a good exampleusing employees parsing
+      nic ep
+      some p before refactoring
+      this works.
+      up to textbox running
+      up to the <draw:frame> tag
+      even the page already done now. #happy
+      some in progress for documentation notes
+      even notes done
+      some p which seems to fails now. but will continue tomorrow or monday. see x rloman hier verder.
+      refactoring. and seems to work. no problem with code. but line wrapping seems to have created the culprit
+      Fixed. it will now refactor
+      major refactoring
+      Add codeGen for asciidoc for starters
+      Add first files
+      Add initial pom
+      Move to maven structure
+      move some resources to src/main/resources
+      Add .gitignore and main
+      Delete .classpath from repo but stay in repo
+      Add empty test to get all directies filed op
+      Add more unittests
+      Add abstract class Node and inherit all domains from it
+      nice p it even rocks
+      clean up and some empty cases
+      other exception and add a test file
+      Fix the broken unit tests
+      add visitor. set frame and page to use it
+      Set paragraph and presentationnote to use the visitor
+      some p
+      some removing of intelligence which was too low in the nodes. And adjust some asciidcot openings (===)
+      Add TextList and TextListitem. Will improve. Mentioned in redmine
+      Adjust rendering presentation notes and pagenums
+      Export to file
+      Create presentation notes using a boolean for now. And nice ... 4 equal signs in Maven slides does not generate the explanation in slides but it does in html and pdf
+      Make a dot before first line of slide and might amend it after generating
+      reorder
+      Fix the space between asterisks for now
+      this fixes the .\ to * issue|
+      remove the number
+      works for now
+      better
+      Add source code for Java frame from the draw:custom-shape
+
+==============================================================
