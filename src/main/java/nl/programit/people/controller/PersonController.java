@@ -1,4 +1,4 @@
-package nl.carpago.parser.controller;
+package nl.programit.people.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import nl.carpago.parser.domain.Person;
+import nl.programit.people.domain.Person;
 
 @Controller
-public class FileUploadController {
+public class PersonController {
 	
 	private List<Person> people = new ArrayList<>();
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(FileUploadController.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
 
 	@RequestMapping(value = "/upload", method = RequestMethod.GET)
 	public @ResponseBody String provideUploadInfo() {
