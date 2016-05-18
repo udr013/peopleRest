@@ -1,4 +1,4 @@
-package nl.carpago.parser.controller;
+package nl.programit.people.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import nl.carpago.parser.domain.Person;
+import nl.programit.people.domain.Person;
 
 @Controller
 public class FileUploadController {

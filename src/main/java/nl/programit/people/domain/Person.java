@@ -1,4 +1,4 @@
-package nl.carpago.parser.domain;
+package nl.programit.people.domain;
 
 import java.io.Serializable;
 

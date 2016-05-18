@@ -1,10 +1,10 @@
-package nl.carpago.parser.domain;
+package nl.programit.people.domain;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import nl.carpago.parser.visitor.Visitor;
+import nl.programit.people.visitor.Visitor;
 
 public class TextSpan extends Node implements Iterable<Node> {
 	

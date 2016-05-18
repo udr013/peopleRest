@@ -1,6 +1,6 @@
-package nl.carpago.parser.domain;
+package nl.programit.people.domain;
 
-import nl.carpago.parser.visitor.Visitor;
+import nl.programit.people.visitor.Visitor;
 
 public class TextLineBreak extends Node {
 	

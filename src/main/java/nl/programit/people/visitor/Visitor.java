@@ -1,16 +1,16 @@
-package nl.carpago.parser.visitor;
+package nl.programit.people.visitor;
 
-import nl.carpago.parser.domain.CustomShape;
-import nl.carpago.parser.domain.Frame;
-import nl.carpago.parser.domain.Page;
-import nl.carpago.parser.domain.Paragraph;
-import nl.carpago.parser.domain.Presentation;
-import nl.carpago.parser.domain.PresentationNote;
-import nl.carpago.parser.domain.TextBox;
-import nl.carpago.parser.domain.TextLineBreak;
-import nl.carpago.parser.domain.TextList;
-import nl.carpago.parser.domain.TextListItem;
-import nl.carpago.parser.domain.TextSpan;
+import nl.programit.people.domain.CustomShape;
+import nl.programit.people.domain.Frame;
+import nl.programit.people.domain.Page;
+import nl.programit.people.domain.Paragraph;
+import nl.programit.people.domain.Presentation;
+import nl.programit.people.domain.PresentationNote;
+import nl.programit.people.domain.TextBox;
+import nl.programit.people.domain.TextLineBreak;
+import nl.programit.people.domain.TextList;
+import nl.programit.people.domain.TextListItem;
+import nl.programit.people.domain.TextSpan;
 
 public class Visitor {
 

@@ -1,4 +1,4 @@
-package nl.carpago.parser.domain;
+package nl.programit.people.domain;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;

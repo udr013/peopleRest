@@ -1,13 +1,13 @@
-package nl.carpago.parser.handler;
+package nl.programit.people.handler;
 
 
-import nl.carpago.parser.domain.Frame;
-import nl.carpago.parser.domain.Node;
-import nl.carpago.parser.domain.Page;
-import nl.carpago.parser.domain.Paragraph;
-import nl.carpago.parser.domain.PresentationNote;
-import nl.carpago.parser.domain.TextBox;
-import nl.carpago.parser.domain.TextSpan;
+import nl.programit.people.domain.Frame;
+import nl.programit.people.domain.Node;
+import nl.programit.people.domain.Page;
+import nl.programit.people.domain.Paragraph;
+import nl.programit.people.domain.PresentationNote;
+import nl.programit.people.domain.TextBox;
+import nl.programit.people.domain.TextSpan;
 
 import org.junit.Assert;
 import org.junit.Before;
