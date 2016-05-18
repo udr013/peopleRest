@@ -53,53 +53,6 @@
 
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<executable>true</executable>
-				</configuration>
-			</plugin>
-			
-			
-			<plugin>
-				<groupId>org.asciidoctor</groupId>
-				<artifactId>asciidoctor-maven-plugin</artifactId>
-				<version>${asciidoctor.maven.plugin.version}</version>
-				
-				<configuration>
-					<outputDirectory>target</outputDirectory>
-					<doctype>book</doctype>
-					<attributes>
-						<toc>right</toc>
-						<source-highlighter>coderay</source-highlighter>
-						<icons>font</icons>
-						<docVersion>${project.version}</docVersion>
-					</attributes>
-				</configuration>
-				
-				<executions>
-					<execution>
-						<id>output-html</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>process-asciidoc</goal>
-						</goals>
-						<configuration>
-							<backend>html</backend>
-							<attributes>
-								<docVersion>${project.version}</docVersion>
-							</attributes>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			
-		</plugins>
-	</build>
-
 	<reporting>
 		<plugins>
 			<plugin>
