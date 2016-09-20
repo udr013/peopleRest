@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
+import nl.programit.people.service.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,11 +18,14 @@ import nl.programit.people.domain.Person;
 @Controller
 public class PersonController {
 
+	@Autowired
+	PersonService personService;
+
 	private List<Person> people = new ArrayList<>();
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public @ResponseBody String list() {
-		return this.people.toString();
+		return personService.findAllPersons().toString();
 	}
 
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)
@@ -37,6 +42,7 @@ public class PersonController {
 		p.setFirstName(name);
 		p.setLastName(lastName);
 
-		this.people.add(p);
+        personService.save(p);
+
 	}
 }
