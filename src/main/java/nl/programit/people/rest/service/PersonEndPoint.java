@@ -28,12 +28,12 @@ public class PersonEndPoint {
         Iterable<Person> result = this.personService.findAllPersons();
         return Response.ok(result).build();
     }
-}
 
-//    @POST
-//    @Consumes(MediaType.APPLICATION_JSON)
-//    public Response post(Person person) {
-//        this.personService.save(person);
-//
-//        return Response.accepted().build();
-//    }}
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response post(Person person) {
+        this.personService.save(person);
+
+        return Response.accepted().build();
+    }}
