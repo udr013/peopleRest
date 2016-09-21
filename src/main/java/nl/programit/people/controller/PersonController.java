@@ -44,5 +44,6 @@ public class PersonController {
 
         personService.save(p);
 
+		this.people.add(p);
 	}
 }

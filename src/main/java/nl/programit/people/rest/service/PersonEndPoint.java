@@ -9,7 +9,6 @@ import javax.ws.rs.core.Response;
 
 import nl.programit.people.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import nl.programit.people.domain.Person;
 
@@ -32,8 +31,11 @@ public class PersonEndPoint {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response post(Person person) {
         this.personService.save(person);
+        //returns person object else retuns nothing
 
-        return Response.accepted().build();
+        // whats difference between Response.ok  & Response.accepted
+        return Response.accepted(person).build(); // build maakt JSON van resultaat
     }}
